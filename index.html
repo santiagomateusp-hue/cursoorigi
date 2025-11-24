@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Multiservicios - Expertos en Seguridad Industrial y Saneamiento | Certificados Legales</title>
+    <meta name="description" content="Empresa líder en Colombia especializada en fumigación, lavado de tanques, capacitación de manipulación de alimentos, certificados médicos y planes de saneamiento. Cumplimiento normativo garantizado.">
+    <meta name="keywords" content="fumigación, control de plagas, lavado de tanques, manipulación de alimentos, certificado médico ocupacional, plan de saneamiento, seguridad industrial, salud ocupacional, Colombia">
+    <meta name="author" content="Multiservicios S.A.S">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Spanish">
+    <meta name="revisit-after" content="7 days">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://multiservicios.com/">
+    <meta property="og:title" content="Multiservicios - Seguridad Industrial y Saneamiento Ambiental">
+    <meta property="og:description" content="Soluciones integrales certificadas para el cumplimiento normativo de su empresa. Más de 12 años de experiencia.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://multiservicios.com/">
+    <meta property="twitter:title" content="Multiservicios - Seguridad y Saneamiento">
+    <meta property="twitter:description" content="Expertos certificados en control de plagas, saneamiento y seguridad industrial">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200">
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Multiservicios S.A.S",
+      "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
+      "@id": "https://multiservicios.com",
+      "url": "https://multiservicios.com",
+      "telephone": "+573057002164",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Calle Principal",
+        "addressLocality": "Bogotá",
+        "addressCountry": "CO"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 4.7110,
+        "longitude": -74.0721
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/multiservicios",
+        "https://www.instagram.com/multiservicios",
+        "https://www.linkedin.com/company/multiservicios"
+      ]
+    }
+    </script>
+    
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --accent-color: #0ea5e9;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --danger-color: #ef4444;
+        }
+        
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+        
+        .bg-gradient-hero {
+            background: linear-gradient(160deg, #f0f9ff 0%, #e0f2fe 50%, #ffffff 100%);
+        }
+        
+        .bg-gradient-blue {
+            background: linear-gradient(135deg, #1e40af 0%, #2563eb 100%);
+        }
+        
+        .service-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px -5px rgba(30, 64, 175, 0.15);
+        }
+        
+        .check-list li {
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .check-list li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: var(--primary-color);
+            font-size: 0.875rem;
+        }
+        
+        /* Animaciones mejoradas */
+        @keyframes pulse-border {
+            0% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(37, 99, 235, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); }
+        }
+        
+        .badge-pulse {
+            animation: pulse-border 2s infinite;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fadeIn {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+        }
+        
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .animate-slideInLeft {
+            animation: slideInLeft 0.8s ease-out forwards;
+            opacity: 0;
+        }
+        
+        @keyframes blob {
+            0% { transform: translate(0px, 0px) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+            100% { transform: translate(0px, 0px) scale(1); }
+        }
+        
+        .animate-blob {
+            animation: blob 7s infinite;
+        }
+        
+        .animation-delay-2000 {
+            animation-delay: 2s;
+        }
+        
+        .animation-delay-4000 {
+            animation-delay: 4s;
+        }
+        
+        /* Efecto de carga */
+        .skeleton {
+            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+            background-size: 200% 100%;
+            animation: loading 1.5s infinite;
+        }
+        
+        @keyframes loading {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+        
+        /* Estilos para modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.5);
+            backdrop-filter: blur(5px);
+            animation: fadeIn 0.3s ease-out;
+        }
+        
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .modal-content {
+            background-color: white;
+            margin: auto;
+            padding: 0;
+            border-radius: 1rem;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            animation: slideInUp 0.3s ease-out;
+        }
+        
+        @keyframes slideInUp {
+            from {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        /* Notification Toast */
+        .toast {
+            position: fixed;
+            bottom: -100px;
+            right: 20px;
+            background: white;
+            padding: 1rem 1.5rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            z-index: 10000;
+            transition: bottom 0.4s ease-out;
+            border-left: 4px solid var(--success-color);
+        }
+        
+        .toast.show {
+            bottom: 20px;
+        }
+        
+        /* Scroll Progress Bar */
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            z-index: 9999;
+            transition: width 0.1s ease;
+        }
+        
+        /* Chat Widget Simulado */
+        .chat-widget {
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            width: 350px;
+            max-width: calc(100vw - 40px);
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            z-index: 1000;
+            transform: translateY(500px);
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .chat-widget.open {
+            transform: translateY(0);
+        }
+        
+        /* Galería mejorada */
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 1rem;
+            cursor: pointer;
+        }
+        
+        .gallery-item img {
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            align-items: flex-end;
+            padding: 1.5rem;
+        }
+        
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+        
+        /* Mejora en inputs */
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+        
+        /* Loading spinner */
+        .spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid var(--primary-color);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* Clip path mejorado */
+        .clip-diagonal {
+            clip-path: polygon(15% 0%, 100% 0, 100% 100%, 0% 100%);
+        }
+        
+        /* Badges profesionales */
+        .trust-badge {
+            transition: all 0.3s ease;
+        }
+        
+        .trust-badge:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        /* Mejora de accesibilidad */
+        *:focus-visible {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
+        }
+        
+        /* Media queries para mejor responsive */
+        @media (max-width: 768px) {
+            .chat-widget {
+                width: calc(100vw - 40px);
+                bottom: 80px;
+            }
+        }
+        
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Selection color */
+        ::selection {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        /* Lazy loading blur effect */
+        img[loading="lazy"] {
+            filter: blur(10px);
+            transition: filter 0.3s;
+        }
+        
+        img[loading="lazy"].loaded {
+            filter: blur(0);
+        }
+        /* New Styles for 4-Step Process */
+        .step-card {
+            transition: all 0.3s ease-in-out;
+            position: relative;
+        }
+        .step-card:hover {
+            background-color: #f0f9ff;
+        }
+        .step-number {
+            position: absolute;
+            top: -1.5rem;
+            left: -1.5rem;
+            background: #2563eb;
+            color: white;
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            font-weight: bold;
+            border-radius: 50%;
+            border: 4px solid #ffffff;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-800 antialiased">
+    
+    <div class="progress-bar" id="progressBar" style="width: 0%"></div>
+    
+    <div class="toast" id="toast">
+        <div class="flex items-center gap-3">
+            <i class="fa-solid fa-check-circle text-green-500 text-xl"></i>
+            <div>
+                <p class="font-bold text-slate-900" id="toastTitle">Éxito</p>
+                <p class="text-sm text-slate-600" id="toastMessage">Mensaje enviado correctamente</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bg-gradient-to-r from-red-600 to-orange-600 text-white text-center py-2.5 px-4 text-sm font-medium relative overflow-hidden" id="urgencyBanner">
+        <div class="relative z-10 flex items-center justify-center gap-2 flex-wrap">
+            <i class="fa-solid fa-triangle-exclamation animate-pulse"></i>
+            <span>⚡ <strong>URGENCIAS 24/7</strong> - ¿Visita sanitaria próxima? Certificación express en 24 horas</span>
+            <a href="#contacto" class="underline hover:no-underline ml-2">Solicitar Ahora →</a>
+        </div>
+        <button onclick="closeBanner()" class="absolute right-4 top-1/2 -translate-y-1/2 text-lg hover:bg-white/20 rounded p-1 transition-colors" aria-label="Cerrar banner">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+
+    <div class="bg-slate-900 text-slate-300 text-xs py-2.5 hidden md:block">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-6">
+                <a href="tel:+573057002164" class="flex items-center gap-2 hover:text-blue-400 transition-colors">
+                    <i class="fa-solid fa-phone text-blue-500"></i> <span id="telefonos">+57 305 700 2164</span>
+                </a>
+                <a href="mailto:info@multiservicios.com" class="flex items-center gap-2 hover:text-blue-400 transition-colors">
+                    <i class="fa-solid fa-envelope text-blue-500"></i> info@multiservicios.com
+                </a>
+                <span class="flex items-center gap-2">
+                    <i class="fa-solid fa-clock text-blue-500"></i> Lun - Vie: 8:00 AM - 6:00 PM | Sáb: 8:00 AM - 2:00 PM
+                </span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <header class="sticky top-0 w-full bg-white/95 backdrop-blur-md shadow-sm z-50 transition-all duration-300 border-b border-slate-100" id="header">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#inicio" class="text-2xl font-extrabold text-slate-900 flex items-center gap-2 tracking-tight">
+                <div class="bg-blue-600 text-white p-1.5 rounded-lg shadow-lg shadow-blue-600/20">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <span class="text-blue-900 tracking-tight">MULTISERVICIOS</span>
+            </a>
+            
+            <nav class="hidden lg:flex space-x-6 items-center">
+                <a href="#inicio" class="text-slate-600 hover:text-blue-600 font-semibold transition-colors text-sm uppercase tracking-wide">Inicio</a>
+                <a href="#nosotros" class="text-slate-600 hover:text-blue-600 font-semibold transition-colors text-sm uppercase tracking-wide">Nosotros</a>
+                <a href="#servicios" class="text-slate-600 hover:text-blue-600 font-semibold transition-colors text-sm uppercase tracking-wide">Servicios</a>
+                <a href="#proceso-certificacion" class="text-slate-600 hover:text-blue-600 font-semibold transition-colors text-sm uppercase tracking-wide">Proceso</a>
+                <a href="#modulos" class="text-slate-600 hover:text-blue-600 font-semibold transition-colors text-sm uppercase tracking-wide">Módulos</a>
+                <a href="#precios" class="text-slate-600 hover:text-blue-600 font-semibold transition-colors text-sm uppercase tracking-wide">Precios</a>
+                <a href="#testimonios" class="text-slate-600 hover:text-blue-600 font-semibold transition-colors text-sm uppercase tracking-wide">Clientes</a>
+                <a href="#videos" class="text-slate-600 hover:text-blue-600 font-semibold transition-colors text-sm uppercase tracking-wide">Videos</a>
+                <a href="#faq" class="text-slate-600 hover:text-blue-600 font-semibold transition-colors text-sm uppercase tracking-wide">Preguntas</a>
+                <a href="#contacto" class="bg-blue-600 text-white px-6 py-2.5 rounded-full font-semibold hover:bg-blue-700 transition-all transform hover:scale-105 shadow-lg shadow-blue-500/30 flex items-center gap-2">
+                    <i class="fa-regular fa-paper-plane"></i> Contáctanos
+                </a>
+            </nav>
+
+            <button id="menu-btn" class="lg:hidden text-slate-800 focus:outline-none p-2 rounded-md hover:bg-slate-100" aria-label="Menú de navegación" aria-expanded="false">
+                <i class="fa-solid fa-bars text-2xl transition-transform duration-300"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-100 absolute w-full shadow-xl h-screen top-full left-0 z-40">
+            <div class="flex flex-col px-6 py-8 space-y-6 text-center">
+                <a href="#inicio" class="text-lg text-slate-700 font-bold hover:text-blue-600 p-2">Inicio</a>
+                <a href="#nosotros" class="text-lg text-slate-700 font-bold hover:text-blue-600 p-2">Nosotros</a>
+                <a href="#servicios" class="text-lg text-slate-700 font-bold hover:text-blue-600 p-2">Servicios</a>
+                <a href="#proceso-certificacion" class="text-lg text-slate-700 font-bold hover:text-blue-600 p-2">Proceso</a>
+                <a href="#modulos" class="text-lg text-slate-700 font-bold hover:text-blue-600 p-2">Módulos</a>
+                <a href="#precios" class="text-lg text-slate-700 font-bold hover:text-blue-600 p-2">Precios</a>
+                <a href="#testimonios" class="text-lg text-slate-700 font-bold hover:text-blue-600 p-2">Clientes</a>
+                <a href="#videos" class="text-lg text-slate-700 font-bold hover:text-blue-600 p-2">Videos</a>
+                <a href="#faq" class="text-lg text-slate-700 font-bold hover:text-blue-600 p-2">Preguntas</a>
+                <a href="#contacto" class="text-white bg-blue-600 py-4 rounded-xl font-bold shadow-lg mx-4 mt-4">Contáctanos</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="inicio" class="relative pt-20 pb-28 lg:pt-32 lg:pb-40 overflow-hidden bg-gradient-hero">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2">
+                    <div class="inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-8 border border-blue-200 badge-pulse shadow-sm">
+                        <i class="fa-solid fa-shield-check"></i> Certificación Garantizada - ISO 9001
+                    </div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-[1.15] mb-6">
+                        Seguridad y Bienestar Integral para su <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">Empresa</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-slate-600 mb-10 leading-relaxed max-w-xl">
+                        Evite sanciones de hasta <strong class="text-slate-900">$50 millones</strong>. Expertos en normativa sanitaria, seguridad industrial y salud ocupacional con certificación legal garantizada.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contacto" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-700 transition-all shadow-xl shadow-blue-500/20 text-center flex items-center justify-center gap-2 transform hover:-translate-y-1">
+                            Agendar Visita Técnica Gratis <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#servicios" class="bg-white text-slate-700 border border-slate-200 px-8 py-4 rounded-xl font-bold hover:bg-slate-50 hover:text-blue-600 hover:border-blue-200 transition-all text-center flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-play-circle"></i> Ver Portafolio
+                        </a>
+                    </div>
+                    
+                    <div class="mt-12 pt-8 border-t border-slate-200 grid grid-cols-2 md:grid-cols-4 gap-6">
+                        <div class="flex flex-col">
+                            <p class="text-3xl font-bold text-slate-900"><span class="counter" data-target="12">0</span>+</p>
+                            <p class="text-sm text-slate-500 font-medium">Años de Trayectoria</p>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-3xl font-bold text-slate-900"><span class="counter" data-target="100">0</span>%</p>
+                            <p class="text-sm text-slate-500 font-medium">Concepto Favorable</p>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-3xl font-bold text-slate-900"><span class="counter" data-target="800">0</span>+</p>
+                            <p class="text-sm text-slate-500 font-medium">Empresas Atendidas</p>
+                        </div>
+                        <div class="flex flex-col" id="personas-certificadas">
+                            <p class="text-3xl font-bold text-slate-900"><span class="counter" data-target="1500">0</span>+</p>
+                            <p class="text-sm text-slate-500 font-medium">Personas Certificadas</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2 relative">
+                    <div class="absolute top-10 right-10 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
+                    <div class="absolute -bottom-10 -left-10 w-72 h-72 bg-cyan-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
+                    <div class="absolute top-1/2 left-1/2 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
+                    
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white group">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                             alt="Inspector de seguridad industrial validando normas" 
+                             class="w-full h-[600px] object-cover group-hover:scale-105 transition-transform duration-700"
+                             loading="eager">
+                        
+                        <div class="absolute bottom-8 left-8 bg-white/95 backdrop-blur-md p-5 rounded-2xl shadow-lg border border-white/50 max-w-xs transform transition-transform group-hover:translate-y-[-5px]">
+                            <div class="flex items-start gap-4">
+                                <div class="bg-green-100 p-3 rounded-full text-green-600">
+                                    <i class="fa-solid fa-file-circle-check text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-slate-900 text-lg">Documentación al Día</p>
+                                    <p class="text-xs text-slate-500 mt-1">Cumplimiento 100% normatividad vigente</p>
+                                    <div class="flex gap-1 mt-2">
+                                        <span class="text-yellow-400"><i class="fa-solid fa-star text-xs"></i></span>
+                                        <span class="text-yellow-400"><i class="fa-solid fa-star text-xs"></i></span>
+                                        <span class="text-yellow-400"><i class="fa-solid fa-star text-xs"></i></span>
+                                        <span class="text-yellow-400"><i class="fa-solid fa-star text-xs"></i></span>
+                                        <span class="text-yellow-400"><i class="fa-solid fa-star text-xs"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-white border-y border-slate-100 py-12">
+        <div class="container mx-auto px-6">
+            <p class="text-center text-slate-400 text-sm font-semibold uppercase tracking-widest mb-10">Certificados y Autorizados por</p>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 items-center">
+                <div class="trust-badge flex flex-col items-center gap-3 p-6 bg-slate-50 rounded-xl hover:bg-blue-50 transition-all group cursor-pointer">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
+                        <i class="fa-solid fa-building-columns text-3xl text-blue-600"></i>
+                    </div>
+                    <div class="text-center">
+                        <p class="font-bold text-slate-800 text-sm">INVIMA</p>
+                        <p class="text-xs text-slate-500">Reg. Sanitario</p>
+                    </div>
+                </div>
+                
+                <div class="trust-badge flex flex-col items-center gap-3 p-6 bg-slate-50 rounded-xl hover:bg-blue-50 transition-all group cursor-pointer">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
+                        <i class="fa-solid fa-heart-pulse text-3xl text-red-600"></i>
+                    </div>
+                    <div class="text-center">
+                        <p class="font-bold text-slate-800 text-sm">SEC. SALUD</p>
+                        <p class="text-xs text-slate-500">Autorizado</p>
+                    </div>
+                </div>
+                
+                <div class="trust-badge flex flex-col items-center gap-3 p-6 bg-slate-50 rounded-xl hover:bg-blue-50 transition-all group cursor-pointer">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
+                        <i class="fa-solid fa-fire-extinguisher text-3xl text-orange-600"></i>
+                    </div>
+                    <div class="text-center">
+                        <p class="font-bold text-slate-800 text-sm">BOMBEROS</p>
+                        <p class="text-xs text-slate-500">Certificado</p>
+                    </div>
+                </div>
+                
+                <div class="trust-badge flex flex-col items-center gap-3 p-6 bg-slate-50 rounded-xl hover:bg-blue-50 transition-all group cursor-pointer">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
+                        <i class="fa-solid fa-briefcase text-3xl text-green-600"></i>
+                    </div>
+                    <div class="text-center">
+                        <p class="font-bold text-slate-800 text-sm">MINTRABAJO</p>
+                        <p class="text-xs text-slate-500">Habilitado</p>
+                    </div>
+                </div>
+                
+                <div class="trust-badge flex flex-col items-center gap-3 p-6 bg-slate-50 rounded-xl hover:bg-blue-50 transition-all group cursor-pointer">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
+                        <i class="fa-solid fa-shield text-3xl text-purple-600"></i>
+                    </div>
+                    <div class="text-center">
+                        <p class="font-bold text-slate-800 text-sm">ARL</p>
+                        <p class="text-xs text-slate-500">Aval Técnico</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="nosotros" class="py-24 bg-slate-50 scroll-mt-20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-16 items-start">
+                <div class="lg:w-1/2 lg:sticky lg:top-24">
+                    <div class="relative group">
+                        <div class="absolute inset-0 bg-blue-600 rounded-2xl rotate-3 group-hover:rotate-6 transition-transform opacity-20"></div>
+                        <img src="https://images.unsplash.com/photo-1584634731339-252c581abfc5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Equipo profesional de Multiservicios" 
+                             class="relative rounded-2xl shadow-xl w-full object-cover h-[500px]"
+                             loading="lazy">
+                        
+                        <div class="absolute -bottom-6 -right-6 bg-blue-600 text-white p-8 rounded-2xl shadow-xl hidden md:block transform group-hover:scale-105 transition-transform">
+                            <i class="fa-solid fa-user-tie text-4xl mb-3"></i>
+                            <p class="text-2xl font-extrabold mb-1">12 Años</p>
+                            <p class="text-sm">Experiencia Comprobada</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <span class="text-sm font-bold uppercase text-blue-600 tracking-wider mb-3 block">¿Quiénes Somos?</span>
+                    <h2 class="text-4xl font-extrabold text-slate-900 mb-8">
+                        Líderes en Saneamiento y Seguridad Industrial en <span class="text-blue-600" id="cobertura">Colombia.</span>
+                    </h2>
+                    <p class="text-lg text-slate-600 mb-6">
+                        Multiservicios S.A.S es una empresa con más de 12 años de trayectoria, comprometida con el cumplimiento normativo y el bienestar de su personal. Proporcionamos soluciones integrales certificadas en salud ocupacional, control de plagas y saneamiento ambiental.
+                    </p>
+                    
+                    <ul class="space-y-4 text-slate-700 text-base check-list mb-10">
+                        <li><strong class="font-semibold">Certificados Legales:</strong> Todos nuestros documentos son emitidos bajo la normativa vigente y avalados por las autoridades competentes.</li>
+                        <li><strong class="font-semibold">Servicio 24/7 Nacional:</strong> Disponibilidad para atender <strong id="disponibilidad">urgencias 24 horas</strong> al día, los 7 días de la semana, con <strong id="cobertura-2">cobertura nacional</strong>.</li>
+                        <li><strong class="font-semibold">Reducción de Riesgos:</strong> Le ayudamos a implementar sistemas de gestión que minimizan multas y accidentes laborales.</li>
+                    </ul>
+
+                    <div id="renovacion-descuento" class="bg-gradient-to-r from-green-500 to-teal-500 text-white p-6 rounded-xl shadow-lg shadow-green-500/30 flex items-center gap-4 animate-fadeIn">
+                        <i class="fa-solid fa-tag text-3xl"></i>
+                        <div>
+                            <p class="text-lg font-bold">¡Programa tu Renovación con Descuento!</p>
+                            <p class="text-sm mt-1">Obtén un <strong class="text-yellow-300">25% de descuento</strong> en la renovación de tu certificación.</p>
+                        </div>
+                        <a href="#contacto" class="bg-white text-green-600 font-bold py-2 px-4 rounded-full hover:bg-gray-100 transition-colors shrink-0">Renovar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proceso-certificacion" class="py-24 bg-white scroll-mt-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-sm font-bold uppercase text-blue-600 tracking-wider mb-3 block">Proceso Simple</span>
+                <h2 class="text-4xl font-extrabold text-slate-900 mb-4">Obtén el Certificado en 4 Pasos Sencillos</h2>
+                <p class="text-lg text-slate-600">Nuestro proceso está optimizado para su comodidad y rapidez, garantizando la validez legal del documento.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                
+                <div class="step-card bg-slate-50 p-8 rounded-xl shadow-md border-t-4 border-blue-600 relative">
+                    <div class="step-number">1</div>
+                    <h3 class="text-xl font-bold text-slate-900 mt-4 mb-3">Haz el curso</h3>
+                    <p class="text-slate-600 text-sm">Accede a nuestra plataforma 24/7 y completa los módulos de capacitación a tu propio ritmo.</p>
+                </div>
+
+                <div class="step-card bg-slate-50 p-8 rounded-xl shadow-md border-t-4 border-cyan-600 relative">
+                    <div class="step-number" style="background: #0ea5e9; box-shadow: 0 4px 15px rgba(14, 165, 233, 0.4);">2</div>
+                    <h3 class="text-xl font-bold text-slate-900 mt-4 mb-3">Presenta la evaluación</h3>
+                    <p class="text-slate-600 text-sm">Realiza la prueba de conocimientos para validar tu aprendizaje. Tienes intentos ilimitados.</p>
+                </div>
+
+                <div class="step-card bg-slate-50 p-8 rounded-xl shadow-md border-t-4 border-green-600 relative">
+                    <div class="step-number" style="background: #10b981; box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);">3</div>
+                    <h3 class="text-xl font-bold text-slate-900 mt-4 mb-3">Obtén el certificado</h3>
+                    <p class="text-slate-600 text-sm">Recibe tu certificado legalmente reconocido. Listo para imprimir o presentar ante las autoridades.</p>
+                </div>
+
+                <div class="step-card bg-slate-50 p-8 rounded-xl shadow-md border-t-4 border-purple-600 relative">
+                    <div class="step-number" style="background: #9333ea; box-shadow: 0 4px 15px rgba(147, 51, 234, 0.4);">4</div>
+                    <h3 class="text-xl font-bold text-slate-900 mt-4 mb-3">Páganos el certificado</h3>
+                    <p class="text-slate-600 text-sm">El curso es gratis, solo pagas la expedición y registro de tu certificado. Múltiples opciones de pago.</p>
+                </div>
+            </div>
+
+            <div class="mt-16 bg-blue-50 p-8 rounded-xl border border-blue-100 shadow-inner">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="flex items-center gap-4">
+                        <i class="fa-solid fa-hourglass-half text-4xl text-blue-600"></i>
+                        <div>
+                            <p class="text-lg font-bold text-slate-900">Sin Límite de Tiempo</p>
+                            <p class="text-slate-700">No tienes límite de tiempo para terminar el curso, puedes hacerlo a tu propio ritmo.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <i class="fa-solid fa-sack-dollar text-4xl text-green-600"></i>
+                        <div>
+                            <p class="text-lg font-bold text-slate-900">Curso Sin Costo</p>
+                            <p class="text-slate-700">El curso no tiene costo, <strong class="font-semibold">solo cobramos el certificado</strong> al finalizar y aprobar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="modulos" class="py-24 bg-slate-100 scroll-mt-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-sm font-bold uppercase text-blue-600 tracking-wider mb-3 block">Contenido de Calidad</span>
+                <h2 class="text-4xl font-extrabold text-slate-900 mb-4">Módulos de Nuestro Curso de Manipulación de Alimentos</h2>
+                <p class="text-lg text-slate-600">Formación completa y actualizada para el cumplimiento de la Resolución 2674 de 2013 y más.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-l-4 border-blue-600">
+                    <i class="fa-solid fa-flask-vial text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Higiene y Contaminación</h3>
+                    <p class="text-slate-600 text-sm">Conceptos clave de microbiología, tipos de contaminantes y enfermedades transmitidas por alimentos (ETA).</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-l-4 border-cyan-600">
+                    <i class="fa-solid fa-person-dots-from-line text-3xl text-cyan-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Prácticas del Manipulador</h3>
+                    <p class="text-slate-600 text-sm">Normas de higiene personal, vestimenta, lavado de manos y estado de salud en el trabajo.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-l-4 border-green-600">
+                    <i class="fa-solid fa-boxes-stacked text-3xl text-green-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Recepción y Almacenamiento</h3>
+                    <p class="text-slate-600 text-sm">Manejo correcto de temperaturas, rotación de productos (PEPS) y prevención de contaminación cruzada.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-l-4 border-orange-600">
+                    <i class="fa-solid fa-scale-balanced text-3xl text-orange-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Legislación Sanitaria</h3>
+                    <p class="text-slate-600 text-sm">Conocimiento de las principales leyes y decretos (como la Res. 2674) que rigen la inocuidad alimentaria.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="precios" class="py-24 bg-white scroll-mt-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-sm font-bold uppercase text-blue-600 tracking-wider mb-3 block">Inversión Inteligente</span>
+                <h2 class="text-4xl font-extrabold text-slate-900 mb-4">Planes de Certificación: Individual y Grupal</h2>
+                <p class="text-lg text-slate-600">Precios competitivos para que tu personal obtenga el certificado que exige la ley sin complicaciones.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                
+                <div class="bg-slate-50 p-10 rounded-2xl shadow-xl border-t-8 border-blue-600 flex flex-col justify-between">
+                    <div>
+                        <span class="text-sm font-bold uppercase text-blue-600 tracking-widest">Plan Individual</span>
+                        <h3 class="text-3xl font-extrabold text-slate-900 mt-2 mb-4">Certificado Personal</h3>
+                        <p class="text-slate-600 mb-6">Ideal para empleados individuales o personas que requieren la certificación por primera vez.</p>
+                        
+                        <div class="text-4xl font-extrabold text-slate-900 mb-6">
+                            $XX.XXX <span class="text-lg font-normal text-slate-500">COP</span>
+                        </div>
+                        
+                        <ul class="space-y-3 text-slate-700 text-base check-list mb-10">
+                            <li>Acceso completo al curso online.</li>
+                            <li>Emisión y registro del certificado digital.</li>
+                            <li>Soporte técnico y legal por 30 días.</li>
+                            <li><strong class="font-semibold text-green-700">25% Dto.</strong> en tu próxima renovación.</li>
+                        </ul>
+                    </div>
+
+                    <a href="#contacto" class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold text-center hover:bg-blue-700 transition-colors">
+                        Obtener mi Certificado
+                    </a>
+                </div>
+
+                <div class="bg-white p-10 rounded-2xl shadow-2xl border-t-8 border-cyan-600 ring-4 ring-cyan-100 relative transform scale-105">
+                    <div class="absolute -top-4 right-4 bg-cyan-600 text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase shadow-md">Más Popular</div>
+                    <div>
+                        <span class="text-sm font-bold uppercase text-cyan-600 tracking-widest">Plan Grupal (Empresas)</span>
+                        <h3 class="text-3xl font-extrabold text-slate-900 mt-2 mb-4">Tarifas Corporativas</h3>
+                        <p class="text-slate-600 mb-6">La solución más económica y eficiente para certificar a grupos de 5 personas o más.</p>
+                        
+                        <div class="text-4xl font-extrabold text-slate-900 mb-6">
+                            Desde $YY.YYY <span class="text-lg font-normal text-slate-500">COP / Persona</span>
+                        </div>
+                        
+                        <ul class="space-y-3 text-slate-700 text-base check-list mb-10">
+                            <li>Descuentos escalonados por volumen.</li>
+                            <li>Gestión centralizada de todos los certificados.</li>
+                            <li>Capacitación presencial/virtual opcional.</li>
+                            <li>Facturación y soporte legal especializado para empresas.</li>
+                        </ul>
+                    </div>
+
+                    <a href="#contacto" class="w-full bg-cyan-600 text-white py-4 rounded-xl font-bold text-center hover:bg-cyan-700 transition-colors">
+                        Solicitar Cotización Grupal
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="servicios" class="py-24 bg-slate-50 scroll-mt-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-sm font-bold uppercase text-blue-600 tracking-wider mb-3 block">Nuestros Pilares</span>
+                <h2 class="text-4xl font-extrabold text-slate-900 mb-4">Soluciones Certificadas a la Medida</h2>
+                <p class="text-lg text-slate-600">Ofrecemos una gama completa de servicios para garantizar el total cumplimiento normativo de su operación.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card bg-white p-8 rounded-2xl shadow-lg border-t-4 border-blue-500">
+                    <i class="fa-solid fa-bug text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Saneamiento Ambiental</h3>
+                    <p class="text-slate-600 text-sm">Fumigación certificada, control integral de plagas y desinfección de superficies y ambientes.</p>
+                    <a href="#contacto" class="text-blue-600 font-semibold text-sm mt-4 block hover:text-blue-800">Más Información →</a>
+                </div>
+                <div class="service-card bg-white p-8 rounded-2xl shadow-lg border-t-4 border-green-500">
+                    <i class="fa-solid fa-user-doctor text-4xl text-green-500 mb-4"></i>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Certificados Médicos</h3>
+                    <p class="text-slate-600 text-sm">Certificado Médico Ocupacional (CMO) de alturas, manipulación de alimentos y más.</p>
+                    <a href="#contacto" class="text-green-600 font-semibold text-sm mt-4 block hover:text-green-800">Solicitar Cita →</a>
+                </div>
+                <div class="service-card bg-white p-8 rounded-2xl shadow-lg border-t-4 border-orange-500">
+                    <i class="fa-solid fa-utensils text-4xl text-orange-500 mb-4"></i>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Capacitación Legal</h3>
+                    <p class="text-slate-600 text-sm">Curso de Manipulación de Alimentos, SG-SST y otros cursos de seguridad industrial.</p>
+                    <a href="#contacto" class="text-orange-600 font-semibold text-sm mt-4 block hover:text-orange-800">Ver Cursos →</a>
+                </div>
+                <div class="service-card bg-white p-8 rounded-2xl shadow-lg border-t-4 border-red-500">
+                    <i class="fa-solid fa-water text-4xl text-red-500 mb-4"></i>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Lavado y Desinfección de Tanques</h3>
+                    <p class="text-slate-600 text-sm">Servicio certificado para tanques de almacenamiento de agua potable, cumpliendo normativa.</p>
+                    <a href="#contacto" class="text-red-600 font-semibold text-sm mt-4 block hover:text-red-800">Agenda tu Mantenimiento →</a>
+                </div>
+                <div class="service-card bg-white p-8 rounded-2xl shadow-lg border-t-4 border-purple-500">
+                    <i class="fa-solid fa-file-invoice text-4xl text-purple-500 mb-4"></i>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Planes de Saneamiento</h3>
+                    <p class="text-slate-600 text-sm">Diseño e implementación de Planes de Saneamiento Básico, vital para la visita sanitaria.</p>
+                    <a href="#contacto" class="text-purple-600 font-semibold text-sm mt-4 block hover:text-purple-800">Conoce el Plan →</a>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <section id="videos" class="py-24 bg-white scroll-mt-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-sm font-bold uppercase text-blue-600 tracking-wider mb-3 block">Prueba Visual</span>
+                <h2 class="text-4xl font-extrabold text-slate-900 mb-4">Videos de Capacitación y Proyectos</h2>
+                <p class="text-lg text-slate-600">Vea la calidad de nuestra instrucción y el profesionalismo en la ejecución de nuestros servicios.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="gallery-item shadow-xl">
+                    <img src="https://via.placeholder.com/800x450/2563EB/FFFFFF?text=Video+Curso+Higiene" alt="Miniatura de video de capacitación en higiene" class="w-full h-full object-cover" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-play-circle text-4xl text-white/90"></i>
+                            <h4 class="text-white font-bold text-lg">Inducción de Higiene Personal</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item shadow-xl">
+                    <img src="https://via.placeholder.com/800x450/0EA5E9/FFFFFF?text=Video+Proyecto+Lavado+Tanques" alt="Miniatura de video de lavado de tanques" class="w-full h-full object-cover" loading="lazy">
+                    <div class="gallery-overlay">
+                         <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-play-circle text-4xl text-white/90"></i>
+                            <h4 class="text-white font-bold text-lg">Lavado de Tanques Certificado</h4>
+                        </div>
+                    </div>
+                </div>
+                 <div class="gallery-item shadow-xl">
+                    <img src="https://via.placeholder.com/800x450/10B981/FFFFFF?text=Video+Protocolos+Saneamiento" alt="Miniatura de video de protocolos de saneamiento" class="w-full h-full object-cover" loading="lazy">
+                    <div class="gallery-overlay">
+                         <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-play-circle text-4xl text-white/90"></i>
+                            <h4 class="text-white font-bold text-lg">Manejo de Protocolos COVID/Sanitarios</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="testimonios" class="py-24 bg-slate-100 scroll-mt-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-sm font-bold uppercase text-blue-600 tracking-wider mb-3 block">Prueba Social</span>
+                <h2 class="text-4xl font-extrabold text-slate-900 mb-4">Lo Que Nuestros Clientes Dicen</h2>
+                <p class="text-lg text-slate-600">Más de 800 empresas confían en Multiservicios para su cumplimiento normativo y seguridad.</p>
+            </div>
+            </div>
+    </section>
+
+
+    <section id="faq" class="py-24 bg-white scroll-mt-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-sm font-bold uppercase text-blue-600 tracking-wider mb-3 block">¿Resolvemos sus Preguntas?</span>
+                <h2 class="text-4xl font-extrabold text-slate-900 mb-4">Preguntas Frecuentes (FAQ)</h2>
+                <p class="text-lg text-slate-600">Toda la información que necesita para tomar la mejor decisión con total transparencia.</p>
+            </div>
+
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="bg-slate-50 p-6 rounded-xl shadow-md border-l-4 border-blue-600">
+                    <h3 class="text-lg font-bold text-slate-900 cursor-pointer flex justify-between items-center">
+                        ¿El certificado de Manipulación de Alimentos es legalmente válido?
+                        <i class="fa-solid fa-plus text-blue-600"></i>
+                    </h3>
+                    </div>
+                <div class="bg-slate-50 p-6 rounded-xl shadow-md border-l-4 border-blue-600">
+                    <h3 class="text-lg font-bold text-slate-900 cursor-pointer flex justify-between items-center">
+                        ¿Qué opciones de Pagos tengo disponibles?
+                        <i class="fa-solid fa-plus text-blue-600"></i>
+                    </h3>
+                    </div>
+                <div class="bg-slate-50 p-6 rounded-xl shadow-md border-l-4 border-blue-600">
+                    <h3 class="text-lg font-bold text-slate-900 cursor-pointer flex justify-between items-center">
+                        ¿Cómo puedo Descargar mi certificado?
+                        <i class="fa-solid fa-plus text-blue-600"></i>
+                    </h3>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-24 bg-gradient-blue text-white scroll-mt-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-4xl font-extrabold mb-4">Contáctanos Hoy Mismo</h2>
+                <p class="text-lg opacity-90">Un asesor especializado está disponible para resolver sus dudas y cotizar su servicio de inmediato.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="bg-white p-10 rounded-2xl shadow-2xl">
+                    <h3 class="text-2xl font-bold text-slate-900 mb-6">Solicita tu Cotización Express</h3>
+                    <form action="#" method="POST" class="space-y-4">
+                        <input type="text" placeholder="Nombre Completo" required class="w-full p-4 border border-slate-300 rounded-lg text-slate-800 focus:ring-blue-500 transition-shadow">
+                        <input type="email" placeholder="Correo Electrónico" required class="w-full p-4 border border-slate-300 rounded-lg text-slate-800 focus:ring-blue-500 transition-shadow">
+                        <input type="tel" placeholder="Teléfonos / WhatsApp" required class="w-full p-4 border border-slate-300 rounded-lg text-slate-800 focus:ring-blue-500 transition-shadow">
+                        <select class="w-full p-4 border border-slate-300 rounded-lg text-slate-800 focus:ring-blue-500 transition-shadow">
+                            <option value="">Seleccione un Servicio de Interés</option>
+                            <option value="manipulacion">Curso Manipulación de Alimentos</option>
+                            <option value="saneamiento">Planes de Saneamiento</option>
+                            <option value="fumigacion">Fumigación / Control de Plagas</option>
+                            <option value="medicos">Certificados Médicos</option>
+                            <option value="otros">Otro</option>
+                        </select>
+                        <textarea placeholder="Mensaje o Requerimiento Específico" rows="4" class="w-full p-4 border border-slate-300 rounded-lg text-slate-800 focus:ring-blue-500 transition-shadow"></textarea>
+                        <button type="submit" class="w-full bg-blue-500 text-white py-4 rounded-xl font-bold text-lg hover:bg-blue-600 transition-all shadow-lg shadow-blue-400/30 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-paper-plane"></i> Enviar Solicitud
+                        </button>
+                    </form>
+                </div>
+
+                <div class="space-y-8 lg:mt-6">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-white/10 p-4 rounded-xl flex-shrink-0">
+                            <i class="fa-solid fa-location-dot text-2xl text-cyan-400"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-1">Cobertura</h4>
+                            <p class="opacity-80">Atendemos a <strong class="font-semibold">Nivel Nacional</strong>. Sedes administrativas en Bogotá y Medellín.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-4">
+                        <div class="bg-white/10 p-4 rounded-xl flex-shrink-0">
+                            <i class="fa-solid fa-headset text-2xl text-cyan-400"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-1">Teléfonos y WhatsApp</h4>
+                            <p class="opacity-80">Línea Principal: <a href="tel:+573057002164" class="underline hover:no-underline font-semibold">+57 305 700 2164</a> (Atención 24 Horas).</p>
+                            <p class="opacity-80">Ventas: <a href="tel:+573001234567" class="underline hover:no-underline font-semibold">+57 300 123 4567</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-4">
+                        <div class="bg-white/10 p-4 rounded-xl flex-shrink-0">
+                            <i class="fa-solid fa-envelope-open-text text-2xl text-cyan-400"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-1">Correo Electrónico</h4>
+                            <p class="opacity-80">General: info@multiservicios.com</p>
+                            <p class="opacity-80">Soporte: soporte@multiservicios.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                
+                <div>
+                    <a href="#inicio" class="text-2xl font-extrabold text-white flex items-center gap-2 tracking-tight mb-4">
+                        <div class="bg-blue-600 text-white p-1.5 rounded-lg shadow-lg shadow-blue-600/20">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <span class="tracking-tight">MULTISERVICIOS</span>
+                    </a>
+                    <p class="text-sm text-slate-400 mb-4">Expertos en seguridad industrial y saneamiento. 100% de cumplimiento normativo garantizado.</p>
+                    <a href="#contacto" class="text-blue-400 font-semibold hover:text-blue-300 text-sm flex items-center gap-2">
+                        <i class="fa-solid fa-arrow-right"></i> Contáctanos Ahora
+                    </a>
+                </div>
+
+                <div>
+                    <h5 class="font-bold text-lg mb-4 uppercase tracking-wider border-b border-slate-700 pb-2">Enlaces Rápidos</h5>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li><a href="#nosotros" class="hover:text-white transition-colors">Nosotros</a></li>
+                        <li><a href="#servicios" class="hover:text-white transition-colors">Servicios</a></li>
+                        <li><a href="#proceso-certificacion" class="hover:text-white transition-colors">Proceso Certificación</a></li>
+                        <li><a href="#precios" class="hover:text-white transition-colors">Precios</a></li>
+                        <li><a href="#faq" class="hover:text-white transition-colors">Preguntas Frecuentes</a></li>
+                        <li><a href="#descargar-certificados" class="hover:text-white transition-colors" id="descargar-certificados">Descargar Certificados</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="font-bold text-lg mb-4 uppercase tracking-wider border-b border-slate-700 pb-2">Nuestros Servicios</h5>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Curso Manipulación Alimentos</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Certificados Médicos</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Control de Plagas</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Lavado de Tanques</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Planes de Saneamiento</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="font-bold text-lg mb-4 uppercase tracking-wider border-b border-slate-700 pb-2">Info Contacto</h5>
+                    <p class="text-sm text-slate-400 flex items-center gap-3 mb-2"><i class="fa-solid fa-phone text-blue-500"></i> <span id="telefonos-2">+57 305 700 2164</span></p>
+                    <p class="text-sm text-slate-400 flex items-center gap-3 mb-4"><i class="fa-solid fa-envelope text-blue-500"></i> info@multiservicios.com</p>
+                    <h5 class="font-bold text-sm mb-3 uppercase tracking-wider">Síguenos</h5>
+                    <div class="flex items-center gap-4">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors text-xl" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors text-xl" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors text-xl" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="border-t border-slate-800 mt-10 pt-6 text-center">
+                <p class="text-sm text-slate-500">© <span id="current-year">2025</span> Multiservicios S.A.S. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // Función para cerrar el banner de urgencia
+        function closeBanner() {
+            const banner = document.getElementById('urgencyBanner');
+            if (banner) {
+                banner.style.display = 'none';
+            }
+        }
+        
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const header = document.getElementById('header');
+
+        menuBtn.addEventListener('click', () => {
+            const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true' || false;
+            menuBtn.setAttribute('aria-expanded', !isExpanded);
+            mobileMenu.classList.toggle('hidden');
+            menuBtn.querySelector('i').classList.toggle('fa-bars');
+            menuBtn.querySelector('i').classList.toggle('fa-xmark');
+            document.body.classList.toggle('overflow-hidden', !isExpanded); // Previene scroll en móvil
+        });
+
+        // Close mobile menu on link click (for smooth scrolling)
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuBtn.setAttribute('aria-expanded', 'false');
+                menuBtn.querySelector('i').classList.remove('fa-xmark');
+                menuBtn.querySelector('i').classList.add('fa-bars');
+                document.body.classList.remove('overflow-hidden');
+            });
+        });
+
+        // Progress Bar on Scroll
+        const progressBar = document.getElementById('progressBar');
+        window.addEventListener('scroll', () => {
+            const scroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (scroll / height) * 100;
+            progressBar.style.width = scrolled + '%';
+
+            // Change header style on scroll
+            if (scroll > 50) {
+                header.classList.add('lg:py-2');
+                header.classList.remove('lg:py-4');
+            } else {
+                header.classList.remove('lg:py-2');
+                header.classList.add('lg:py-4');
+            }
+        });
+
+        // Counter Animation
+        const counters = document.querySelectorAll('.counter');
+        const speed = 200; // The lower the slower
+
+        counters.forEach(counter => {
+            const updateCount = () => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+
+                const inc = target / speed;
+
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + inc);
+                    setTimeout(updateCount, 1);
+                } else {
+                    counter.innerText = target;
+                }
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        updateCount();
+                        observer.unobserve(counter); // Stop observing once animated
+                    }
+                });
+            }, { threshold: 0.5 }); // Trigger when 50% of the element is visible
+
+            observer.observe(counter);
+        });
+
+        // Simple Toast Notification simulation (can be triggered by form submission)
+        function showToast(title, message, isSuccess = true) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toastTitle').innerText = title;
+            document.getElementById('toastMessage').innerText = message;
+            const icon = toast.querySelector('i');
+            
+            icon.classList.remove('text-green-500', 'text-red-500', 'fa-check-circle', 'fa-xmark-circle');
+            toast.style.borderLeftColor = isSuccess ? 'var(--success-color)' : 'var(--danger-color)';
+            
+            if (isSuccess) {
+                icon.classList.add('text-green-500', 'fa-check-circle');
+            } else {
+                icon.classList.add('text-red-500', 'fa-xmark-circle');
+            }
+
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 4000);
+        }
+
+        // Lazy load images
+        document.addEventListener("DOMContentLoaded", function() {
+            const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+            lazyImages.forEach(img => {
+                img.addEventListener('load', () => {
+                    img.classList.add('loaded');
+                });
+            });
+        });
+        
+        // Set current year for footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Example form submission handler
+        document.querySelector('#contacto form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Simulate form processing delay
+            setTimeout(() => {
+                showToast('¡Cotización Enviada!', 'Gracias por contactarnos. Pronto recibirá una respuesta.');
+            }, 1000);
+        });
+
+    </script>
+</body>
+</html>
